@@ -30,7 +30,7 @@ implementation
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
- if DelDir(''+GetProgramFilesDir+'\DigitalEntitlements') = True then
+ if DelDir(''+GetProgramFilesDir+'\DigitalEntitlements') = True then //가져온 Local Appdata 폴더내에 \DigitalEntitlements 폴더가 있다면 삭제
     ShowMessage('Unban ! '+ #13#10 +'FiveM을 재실행 해주세요.');
 end;
 
