@@ -32,12 +32,12 @@ implementation
 procedure TForm1.Button1Click(Sender: TObject);
 begin
  if DelDir(''+GetProgramFilesDir+'\DigitalEntitlements') = True then
-    ShowMessage('AntiBan ! '+ #13#10 +'FiveMÀ» Àç½ÇÇà ÇØÁÖ¼¼¿ä.');
+    ShowMessage('Unban ! '+ #13#10 +'FiveMì„ ì¬ì‹¤í–‰ í•´ì£¼ì„¸ìš”.');
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
-ShowMessage ('µğ½ºÄÚµå : ¸Ò?#8689');
+ShowMessage ('ë””ìŠ¤ì½”ë“œ : ë¨•?#2461');
 end;
 
 end.
