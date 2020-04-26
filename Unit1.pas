@@ -13,7 +13,6 @@ type
     Label1: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
-    procedure Timer1Timer(Sender: TObject);
     procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
