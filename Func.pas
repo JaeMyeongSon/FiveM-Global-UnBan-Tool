@@ -7,16 +7,16 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,shellapi,Shlobj,
   Vcl.ExtCtrls;
 
-  function DelDir(dir: string): Boolean;
-  function GetProgramFilesDir: String;
+  function DelDir(dir: string): Boolean; // 함수 선언
+  function GetProgramFilesDir: String;  // 함수 선언
 
 implementation
 
-uses unit1;
+uses unit1;  //unit1 
 
-function GetProgramFilesDir: String;
+function GetProgramFilesDir: String; 
 const
-    CSIDL_LOCAL_APPDATA           = $001c;
+    CSIDL_LOCAL_APPDATA           = $001c; // 해당 PC 의 Local Appdata 폴더를 찾아줌
 var
    pidl: PItemIDList;
    Path: array [0..MAX_PATH-1] of char;
@@ -28,7 +28,7 @@ begin
    end;
 end;
 
-function DelDir(dir: string): Boolean;
+function DelDir(dir: string): Boolean; //File 삭제 함수 
 var
   fos: TSHFileOpStruct;
 begin
