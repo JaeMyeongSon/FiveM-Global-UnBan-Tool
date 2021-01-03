@@ -27,7 +27,7 @@ implementation
       uses Func;
 {$R *.dfm}
 
-
+//2019년도에 작동하던 언벤 방식이므로, 현재 2021년엔 언벤이 성공적으로 이루어지지 않으며 그저 아이디 로그아웃기능 정도로만 사용할 수 있습니다.
 procedure TForm1.Button1Click(Sender: TObject);
 begin
  if DelDir(''+GetProgramFilesDir+'\DigitalEntitlements') = True then //가져온 Local Appdata 폴더내에 \DigitalEntitlements 폴더가 있다면 삭제
